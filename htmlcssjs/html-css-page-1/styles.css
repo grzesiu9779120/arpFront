@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Libre+Caslon+Display&display=swap');
+
+
+
+font-family: 'Libre Caslon Display', serif;
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+header{
+    position: fixed;
+    width: calc(375px - 64px);
+    top: 1px;
+    left: 32px;
+    display: flex;
+    justify-items: center;
+}
+
+.logo a{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 37px;
+    color: white;
+    position: absolute;
+    top: 32px;
+}
+
+nav{
+    display: none;
+}
+
+.hambuerger-conteiner {
+  position: absolute;
+  top: 43.75px;
+  right: 0px;
+
+}
+.hamburger{
+    position: relative;
+    width: 26.25px;
+    height: 15.25px;
+}
+
+
+  .hamburger span {
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    height: 2.92px;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .hamburger span::before,
+  .hamburger span::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    background-color: #000;
+    height: 2.92px;
+    border-radius: 10px;
+    background-color: white;
+  }
+
+  .hamburger span::before {
+    top: -5px;
+  }
+
+  .hamburger span::after {
+    top: 5px;
+  }
+
+.top{
+    height: 1024px;
+    width: 375px;
+    background-image: url("./assets/images/bg-s.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.textBox{
+  height: 429px;
+  width: 314px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 285px;
+  bottom: 310px;
+  left: 30px
+}
+
+.textBox h1{
+  font-family: 'Libre Caslon Display';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 62px;
+  color: white;
+  text-align: left;
+  margin: 32px 0;
+}
+
+.textBox h1::before{
+  content: "";
+  width: 90px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+
+.textBox p{
+  color: white;
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.textBox button{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 153px;
+  height: 42px;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+  background: none;
+}
+
+.artcle-list{
+  height: auto;
+  width: 375px;
+  background-color: aqua;
+}
+
+.article-header{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: black;
+  padding: 0;
+  margin: 78px 182px 78px 32px;
+}
+
+.article-item{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 619px;
+  width: 311px;
+}
+
+.article-item img{
+  position: relative;
+  border-radius: 4px;
+  max-width: 100%;
+  max-height: 100%;
+}

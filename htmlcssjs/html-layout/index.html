@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- <img src="" alt="" /> -->
+        <span>Logo</span>
+      </div>
+
+      <label for="hamburgerCheck">
+        <div id="hamburger">
+          <span></span>
+        </div>
+      </label>
+      <input type="checkbox" name="hamburgerCheck" id="hamburgerCheck" />
+
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Main</a>
+          </li>
+          <li>
+            <a href="hobby.html">Hobby</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+          <li>
+            <a href="omnie.html">O mnie</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Welcome</h1>
+      <div class="hero">
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/brian-mcgowan-I0fDR8xtApA-unsplash-small.jpg"
+          />
+          <source
+            media="(min-width: 769px)"
+            srcset="./images/brian-mcgowan-I0fDR8xtApA-unsplash-medium.jpg"
+          />
+          <img
+            src="./images/brian-mcgowan-I0fDR8xtApA-unsplash-medium.jpg"
+            alt="Chris standing up holding his daughter Elva"
+          />
+        </picture>
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa officia
+          rem vitae, voluptates quis iste minus inventore magni velit ipsam
+          earum impedit iusto voluptate enim autem sequi, commodi voluptatibus
+          nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          odio, maxime vitae cum iste unde neque dolorem, provident non mollitia
+          assumenda dicta corporis aliquid aperiam minima a veritatis sit
+          quas?</span
+        >
+      </div>
+      <article>
+        <table>
+          <thead>
+            <tr>
+              <th>Lp.</th>
+              <th>Imię</th>
+              <th>Nazwisko</th>
+              <th>Miasto</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Kamil</td>
+              <td>Twardowski</td>
+              <td>Lublin</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <br />
+        <form action="" method="get" id="reservationForm">
+          <label for="firstName">
+            Imie: <input type="text" name="firstName" id="firstName" />
+          </label>
+          <label for="lastName">
+            Nazwisko:
+            <input type="text" name="lastName" id="lastName" />
+          </label>
+          <label for="email">
+            Email:
+            <input type="text" name="lastName" id="email" />
+          </label>
+          <label for="drivingLicenseDate">
+            Od kiedy posiadam prawo jazdy:
+            <input
+              type="date"
+              name="drivingLicenseDate"
+              id="drivingLicenseDate"
+            />
+          </label>
+          <label for="birthDate">
+            Data urodzenia:
+            <input type="date" name="birthDate" id="birthDate" />
+          </label>
+          <label for="car">
+            Samochód:
+            <select name="car">
+              <option>Audi</option>
+              <option>BMW</option>
+              <option>Fiat</option>
+              <option>Porsche</option>
+              <option>Dodge</option>
+            </select>
+          </label>
+          <label for="insurance">
+            Ubezpieczenie:
+            <input type="checkbox" name="insurance" id="insurance" />
+          </label>
+          <label for="carColor">
+            Kolor samochodu
+            <input type="radio" name="carColor" value="red" /> Czerwony
+            <input type="radio" name="carColor" value="black" /> Czarny
+            <input type="radio" name="carColor" value="blue" /> Niebieski
+          </label>
+          <label for="wishes">
+            Życzenia specjalne
+            <textarea
+              name="wishes"
+              id="wishes"
+              placeholder="Specjalne życzenia"
+              cols="10"
+              rows="15"
+              maxlength="100"
+            >
+            </textarea>
+          </label>
+          <button type="submit">Wyślij</button>
+          <button type="reset">Reset</button>
+        </form>
+      </article>
+
+      <div>
+        <p>
+          Sed justo purus, interdum vel arcu feugiat, porttitor tristique ante.
+          Nulla condimentum, magna vel aliquam feugiat, nisl tellus eleifend
+          odio, at viverra velit lectus eu arcu. In eget efficitur leo. Aenean
+          tincidunt tortor nec arcu eleifend rhoncus. Suspendisse aliquam
+          tincidunt purus. Curabitur venenatis ex sit amet maximus ultrices.
+          Nunc vestibulum nec quam eu pharetra. Donec risus lorem, suscipit
+          vitae efficitur in, sagittis et neque. Vestibulum bibendum egestas
+          risus, et sollicitudin purus scelerisque vitae.
+        </p>
+        <p>
+          Sed pretium viverra ligula nec aliquet. Nulla tempus justo vel neque
+          rutrum porttitor. Nullam ultricies ante id vestibulum feugiat.
+          Maecenas vel convallis elit. Suspendisse urna nisi, tincidunt id
+          laoreet non, pulvinar in metus. In a vehicula dui. Donec quis sodales
+          mauris. Fusce facilisis turpis leo, non porta nisi dignissim a.
+          Quisque elementum venenatis ultricies. In aliquet erat sed commodo
+          rutrum. Donec cursus mattis commodo.
+        </p>
+      </div>
+
+      <footer><p>Copyright</p></footer>
+      <script src="./script.js"></script>
+    </main>
+  </body>
+</html>

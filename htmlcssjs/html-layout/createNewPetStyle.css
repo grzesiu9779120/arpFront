@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@100;300;400;500;700&family=Rubik+Microbe&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --teal-dark-1: #2c3532;
+    --teal-dark-2: #0f6466;
+    --teal-dark-3: #d8b08c;
+    --teal-dark-4: #ffcb9a;
+    --teal-dark-5: #d2e8e3;
+    --checkbox: #4285f4;
+  }
+  
+  html {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--teal-dark-1);
+    font-size: 16px;
+  }
+  
+  header {
+    display: flex;
+    height: 14rem; /* bierzemy 10px jako rem (ustawione na font-size el. html) i mnozymy x14 */
+    align-items: center;
+    justify-content: space-around;
+    background-color:var(--teal-dark-1);
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    padding: 10px 14px;
+    background-color: var(--teal-dark-2);
+    border-radius: 2px;
+    transition: background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    min-width: 100px;
+    min-height: 50px;
+  }
+  
+  header nav ul li::after {
+    content: "";
+    background-color: yellow;
+    margin-left: 2px;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: -2px;
+    right: -2px;
+    transition: transform 1.5s cubic-bezier(0.07, 0.68, 0.83, 0.67);
+  }
+  
+  
+  header nav ul li:not(:first-of-type) {
+    margin-left: 5px;
+  }
+  
+  header nav ul li:hover {
+    background-color: var(--teal-dark-5);
+  }
+  
+  header nav ul li:hover::after {
+    transform: scale(62);
+  }
+  
+  header nav ul li:hover a {
+    color: var(--teal-dark-1);
+    font-weight: 700;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: var(--teal-dark-5);
+    font-weight: 300;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+  }
+  
+  h1::first-letter {
+    /* color: var(--teal-dark-3); */
+    font-size: 130%;
+  }
+  
+  header nav ul li a:focus,
+  header nav ul li a:active {
+    outline: none;
+    color: var(--teal-dark-3);
+  }
+  
+  header nav ul li a:focus-visible {
+    outline: 1px dashed var(--teal-dark-5);
+  }
+  
+  .logo {
+    color: var(--teal-dark-5);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 4rem;
+    cursor: pointer;
+  }
+  
+  .logo:hover {
+    transition: transform 1.5s;
+    transform: rotate(-360deg);
+  }
+
+  #hamburgerCheck{
+    visibility: hidden;
+  }
+  
+
+main{
+    background-image: url(./images/background-main.jpg);
+    width: 100%;
+    background-size:contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+main h1{
+  font-family: 'Rubik Microbe', cursive;
+  color: var(--teal-dark-4);
+  font-size: 3rem;
+  margin: 50px 0 50px 0;
+}
+
+main .hero{
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    width: 70%;
+    height: 30rem;
+    margin: 15px 10px 15px 10px;
+    overflow: hidden;
+}
+
+main .hero picture img{
+    border-radius: 10px;
+    position: absolute;
+    border-radius: 3px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 450px;
+}
+
+
+.hero span{
+  width: 35%;
+  height: 70%;
+  overflow: hidden;
+  position: absolute;
+  color: aliceblue;
+  font-size:large;
+  left: 0;
+  top: 50%;
+  transform: translate(25%, -50%);
+}
+
+main article{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+form input[type="text"],
+form input[type="number"],
+form input[type="date"],
+form input[type="email"],
+form select {
+  padding: 4px 10px;
+  min-width: 200px;
+  font-family: "Poppins", sans-serif;
+  border: 2px;
+  border-radius: 2px;
+}
+
+
+main article form{
+  color: var(--teal-dark-5);
+  border-radius: 15px;
+  background-color: rgba(88, 74, 74, 0.2);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+main article form button{
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: var(--teal-dark-4);
+  font-weight: bold;
+  color: var(--teal-dark-1);
+  cursor: pointer;
+}
+
+
+form label {
+  display: inline;
+  margin-bottom: 15px;
+  position: relative;
+  width: 300px;
+}
+
+form label span{
+  position: absolute;
+  left: -55px;
+}
+
+
+form label input, select {
+  margin-left: 15px;
+}
+
+.multiElementConteiner{
+  display: inline;
+  position: relative;
+}
+
+
+.multiElementConteiner ~ input {
+  display: block;
+  margin-top: 15px;
+  margin-left: 58px;
+}
+
+.multiElementButton{
+  position: absolute;
+  right: -35px;
+}
+
+
+
+
+main div > p {
+  color: var(--teal-dark-5);
+  margin: 15px;
+}
+
+footer{
+    background-color: var(--teal-dark-1);
+    color: var(--teal-dark-5);
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 769px) {
+    label[for="hamburgerCheck"] {
+      display: none;
+    }
+  }
+  
+
+
+@media screen and (max-width: 768px) {
+    /*  */
+
+    header{
+      position: relative;
+    }
+    
+    #hamburger {
+      background-color: var(--teal-dark-1);
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      right: 20px;
+      top: 30px;
+    }
+  
+    #hamburger span {
+      width: 100%;
+      position: absolute;
+      background-color: #000;
+      height: 4px;
+      top: 50%;
+      left: 0;
+      transform: translate(0, -50%);
+      border-radius: 4px;
+    }
+  
+    #hamburger span::before,
+    #hamburger span::after {
+      content: "";
+      width: 100%;
+      position: absolute;
+      background-color: #000;
+      height: 4px;
+      border-radius: 10px;
+    }
+  
+    #hamburger span::before {
+      top: -10px;
+    }
+  
+    #hamburger span::after {
+      top: 10px;
+    }
+
+    header nav {
+      margin-right: 50px;
+    }
+  
+    header nav ul {
+      flex-direction: column;
+      visibility: hidden;
+    }
+
+    #hamburgerCheck:checked + nav ul{
+      visibility: visible;
+    }
+  }
+  
+
+  .modalConteiner{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    background-color: rgba(86, 126, 106, 0.4);
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal{
+    width: 540px;
+    height: 200px;
+    background-color: #d2e8e3;
+  }
+
+  .modal__header{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+    height: 35%;
+  }
+
+  .modal__header span {
+    margin: 15px;
+  }
+
+  .modal__header div {
+    margin: 15px;
+    font-size: x-large;
+  }
+
+  .modal__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .modal__content span{
+    display: block;
+    
+  }
+
+  .modal__content > :not(:first-child){
+    margin: 20px;
+  }
+
+  .modal__content input{
+    width: 220px;
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    font-size: 16px;
+  }
+
+  .modal__content button{
+    border: none;
+    border-radius: 3px;
+    width: 70px;
+    background-color: var(--teal-dark-4);
+  }

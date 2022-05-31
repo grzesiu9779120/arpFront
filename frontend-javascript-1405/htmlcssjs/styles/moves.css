@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&family=Libre+Caslon+Display&family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --primary-color: #22254b;
+    --secondary-color: #373b69;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--primary-color) ;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+svg{
+    width: 1.5%;
+    height: auto;
+    margin-right: 15px;
+}
+
+nav{
+    background-color: var(--secondary-color);
+    height: 4rem;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+nav input{
+    background-color: #333662;
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    margin-right: 2rem;
+}
+
+nav input::placeholder{
+    color: #5f66b6;
+}
+
+.moves__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.move__container__flip{
+    perspective: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.move__info__container{
+    position: relative;
+    top: -1.3rem;
+}
+
+.move__info{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    color: white;
+    height: 7rem;
+    width: 19rem;
+}
+
+.rating__container{
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+.move__container__main{
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+
+.move__container__front, .move__container__back {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    width: 19rem;
+    backface-visibility: hidden;
+}
+
+.move__container__flip .visable{
+    transform: rotateY(180deg);
+}
+
+.move__container__back{
+    transform: rotateY(180deg);
+    color: white;
+    position: absolute;
+    top: 0;
+}
+
+.overview__container{
+    position: absolute;
+    bottom:0;
+    background-color: rgba(34, 37, 75, 0.4);
+}
+
+.move__container__front img, .move__container__back img{
+    height: 25rem;
+}
+
+.red{
+    color:red;
+}
+.green{
+    color: green;
+}
+.orange{
+    color: orange;
+}
+
+.move__info > * {
+    margin: 1.5rem;
+}
+
+.slowRemove{
+    opacity: 0;
+    transition: 1.5s;
+}
